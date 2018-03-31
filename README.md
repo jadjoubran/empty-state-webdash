@@ -17,10 +17,3 @@ Empty state component for webdash plugins
 </custom-element-demo>
 ```
 -->
-
-```html
-<empty-state-webdash title="No Web App Manifest found">
-    Check out
-    <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest" target="_blank" rel="nofollower">MDN Web Docs</a> to create a Web App Manifest or update the manifestPath in webdash.json.
-</empty-state-webdash>
-```
