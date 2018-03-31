@@ -1,0 +1,53 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="empty-state-webdash">
+  <template>
+    <style>
+      :host {
+        display: block;
+        text-align: center;
+        padding: 20px 40px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.8;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      p {
+        margin-top: 10px;
+        opacity: 0.7;
+      }
+    </style>
+
+    <h4>{{title}}</h4>
+    <p>
+      <slot></slot>
+    </p>
+  </template>
+
+  <script>
+    /**
+     * `empty-state-webdash`
+     * Empty state for webdash plugins
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class EmptyStateWebdash extends Polymer.Element {
+      static get is() { return 'empty-state-webdash'; }
+
+      static get properties() {
+        return {
+          title: String,
+        };
+      }
+    }
+
+    window.customElements.define(EmptyStateWebdash.is, EmptyStateWebdash);
+  </script>
+</dom-module>
